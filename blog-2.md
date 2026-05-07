@@ -1,9 +1,9 @@
-Title: Inheritance
+Title: OOP
 
 Inheritance is a concept of Object Oriented Programming. Inheritance allows  
 the properties and methods from on class to another with `extends` keyword.
 
-## Code Example
+ Code Example
 
 ```ts
 class Person {
