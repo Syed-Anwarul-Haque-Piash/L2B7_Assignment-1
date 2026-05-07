@@ -1,5 +1,4 @@
 //Problem 1
-// filterEvenNumbers function takes an array of numbers and returns a new array even numbers.
 const filterEvenNumbers=(array: number[]): number[] => {
     return array.filter(arr => arr % 2 === 0);
 }
@@ -55,7 +54,7 @@ const toggleReadStatus=(book: Book):Book & {isRead: boolean} => {
 
 const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
 const updatedBook = toggleReadStatus(myBook);
-//console.log(updatedBook); // Output: { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024, isRead: true }
+console.log(updatedBook); // Output: { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024, isRead: true }
 
 
 //problem 6
@@ -84,13 +83,9 @@ const student = new Student("Alice", 20, "A");
 
 //problem 7
 
-// const getIntersection=(array1: number[], array2: number[]): number[] => {
-//     return array1.filter(value => array2.includes(value));
-// }
-// console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])); 
-
 const getIntersection=(array1: number[], array2: number[]): number[] => {
-    const set2 = new Set(array2);
-    return array1.filter(value => set2.has(value));
+    return array1.filter(value => array2.includes(value));
 }
-console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])); 
+//console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])); 
+
+
